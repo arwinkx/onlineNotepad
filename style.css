@@ -1,0 +1,66 @@
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  direction: rtl;
+}
+
+.note-card {
+  background-color: #fff;
+  color: #000;
+}
+
+body.bg-dark .note-card {
+  background-color: #1f1f1f !important;
+  color: #eee;
+}
+
+/* محدود کردن متن به 3 خط با ... */
+.note-card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* تعداد خطوط قابل نمایش */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+body.bg-dark .text-muted {
+  color: #aaa !important;
+}
+
+.modal-content {
+  background-color: #fff;
+  color: #000;
+}
+
+body.bg-dark .modal-content {
+  background-color: #1f1f1f;
+  color: #eee;
+  border-color: #333;
+}
+
+body.bg-dark .modal-header,
+body.bg-dark .modal-footer {
+  border-color: #333;
+}
+
+.modal-content textarea,
+.modal-content input {
+  background-color: #fff;
+  color: #000;
+}
+
+body.bg-dark .modal-content textarea,
+body.bg-dark .modal-content input {
+  background-color: #2b2b2b;
+  color: #eee;
+  border-color: #555;
+}
+
+.btn + .btn {
+  margin-left: 0.5rem;
+}
